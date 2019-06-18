@@ -82,20 +82,18 @@ Configure motd file
 * vi  blu-php.conf 
 
 ### write this in blu.php.conf 
-* <VirtualHost *:80>
-* ServerName bluboy.adhocnw.com
-*  ServerAlias www.bluboy.adhocnw.com
-*  ServerAdmin webmaster@bluboy.adhocnw.com
-*  DocumentRoot /home2/blu/public_html
-
-*  <Directory /home2/blu/public_html>
-*     Options -Indexes +FollowSymLinks
-*     AllowOverride All
-*  </Directory>
-
-*  ErrorLog /home2/blu/error.log
-*  CustomLog /home2/blu/access.log  combined
-* </VirtualHost>
+    <VirtualHost *:80>
+    ServerName bluboy.adhocnw.com
+    ServerAlias www.bluboy.adhocnw.com
+    ServerAdmin webmaster@bluboy.adhocnw.com
+    DocumentRoot /home2/blu/public_html
+    <Directory /home2/blu/public_html>
+    Options -Indexes +FollowSymLniks
+    AllowOverride All
+    </Directory>
+    ErrorLog /home2/blu/error.log
+    CustomLog /home2/blu/access.log  combined
+    </VirtualHost>
 
 ### make new files
 * vi  /home2/blu/error.log
